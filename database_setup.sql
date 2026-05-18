@@ -1,8 +1,5 @@
--- ============================================================
 -- Student Course Registration & Management System
--- Database Setup Script
--- Run this in MySQL before starting the application
--- ============================================================
+
 
 CREATE DATABASE IF NOT EXISTS student_course_db;
 USE student_course_db;
@@ -44,9 +41,7 @@ CREATE TABLE IF NOT EXISTS registrations (
     FOREIGN KEY (course_id) REFERENCES courses(course_id)
 );
 
--- Seed Data: Default Admin
+--Default Admin
 INSERT INTO admin (username, password) VALUES ('admin', 'admin123');
 
--- ============================================================
--- Done! Now configure DBConnection.java with your MySQL password
--- ============================================================
+
